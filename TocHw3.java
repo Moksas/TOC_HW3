@@ -36,17 +36,17 @@ public class TocHw3 {
     		for(int k = Integer.parseInt(args[3]);k<=103;k++)
     		{
     			comy=""+k;
-    			objectyear=""+json.getJSONObject(i).getInt("����~��") ;
+    			objectyear=""+json.getJSONObject(i).getInt("交易年月") ;
     		
     			if(objectyear.startsWith(comy) && 
-    				json.getJSONObject(i).getString("�m������").equals(args[1])
-    				&&json.getJSONObject(i).getString("�g�a�Ϭq��m�Ϋت��Ϫ��P").contains(args[2] ))
+    				json.getJSONObject(i).getString("鄉鎮市區").equals(args[1])
+    				&&json.getJSONObject(i).getString("土地區段位置或建物區門牌").contains(args[2] ))
     				
     			{
     				number++;
-    				sum += json.getJSONObject(i).getInt("�`����");
-    			//	System.out.println(json.getJSONObject(i).getString("�m������") + "    " + json.getJSONObject(i).getString("�g�a�Ϭq��m�Ϋت��Ϫ��P") + "    " + 
-					//		json.getJSONObject(i).getInt("����~��") + "    " +json.getJSONObject(i).getInt("�`����"));
+    				sum += json.getJSONObject(i).getInt("總價元");
+    			//	System.out.println(json.getJSONObject(i).getString("鄉鎮市區") + "    " + json.getJSONObject(i).getString("土地區段位置或建物區門牌") + "    " + 
+					//		json.getJSONObject(i).getInt("交易年月") + "    " +json.getJSONObject(i).getInt("總價元"));
     			}//judge the data is satisfied and output it year by year 
     			
     		}

@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-public class TocHW3 {
+public class TocHw3 {
 
   public static  JSONArray readJsonFromUrl(String url) throws IOException, JSONException {
     InputStream is = new URL(url).openStream();
@@ -36,17 +36,17 @@ public class TocHW3 {
     		for(int k = Integer.parseInt(args[3]);k<=103;k++)
     		{
     			comy=""+k;
-    			objectyear=""+json.getJSONObject(i).getInt("¥æ©ö¦~¤ë") ;
+    			objectyear=""+json.getJSONObject(i).getInt("ï¿½ï¿½ï¿½ï¿½~ï¿½ï¿½") ;
     		
     			if(objectyear.startsWith(comy) && 
-    				json.getJSONObject(i).getString("¶mÂí¥«°Ï").equals(args[1])
-    				&&json.getJSONObject(i).getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP").contains(args[2] ))
+    				json.getJSONObject(i).getString("ï¿½mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½").equals(args[1])
+    				&&json.getJSONObject(i).getString("ï¿½gï¿½aï¿½Ï¬qï¿½ï¿½mï¿½Î«Øªï¿½ï¿½Ïªï¿½ï¿½P").contains(args[2] ))
     				
     			{
     				number++;
-    				sum += json.getJSONObject(i).getInt("Á`»ù¤¸");
-    			//	System.out.println(json.getJSONObject(i).getString("¶mÂí¥«°Ï") + "    " + json.getJSONObject(i).getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP") + "    " + 
-					//		json.getJSONObject(i).getInt("¥æ©ö¦~¤ë") + "    " +json.getJSONObject(i).getInt("Á`»ù¤¸"));
+    				sum += json.getJSONObject(i).getInt("ï¿½`ï¿½ï¿½ï¿½ï¿½");
+    			//	System.out.println(json.getJSONObject(i).getString("ï¿½mï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") + "    " + json.getJSONObject(i).getString("ï¿½gï¿½aï¿½Ï¬qï¿½ï¿½mï¿½Î«Øªï¿½ï¿½Ïªï¿½ï¿½P") + "    " + 
+					//		json.getJSONObject(i).getInt("ï¿½ï¿½ï¿½ï¿½~ï¿½ï¿½") + "    " +json.getJSONObject(i).getInt("ï¿½`ï¿½ï¿½ï¿½ï¿½"));
     			}//judge the data is satisfied and output it year by year 
     			
     		}
